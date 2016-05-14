@@ -1,0 +1,28 @@
+Discs:
+  13: true
+  11: true
+  Blocks: true
+  Cat: true
+  Chirp: true
+  Far: true
+  Mall: true
+  Mellohi: true
+  Stal: true
+  Strad: true
+  Ward: true
+  Wait: true
+HorseArmour:
+  Iron: true
+  Gold: true
+  Diamond: true
+Ice:
+  Ice: true
+  Packed: true
+Misc:
+  Saddle: true
+  Tag: true
+  Cobweb: true
+  Elytra: true
+  Spawner: true
+  DragonHead: true
+  DragonEgg: true
