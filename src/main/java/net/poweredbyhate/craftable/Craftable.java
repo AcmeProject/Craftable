@@ -21,16 +21,16 @@ public class Craftable extends JavaPlugin {
 
     public void registerMiscRecipes() {
         if (go("Misc.Saddle")) {
-            Bukkit.getServer().addRecipe(new ShapedRecipe(get(Material.SADDLE)).shape("aaa","sas","dxd").setIngredient('a', Material.LEATHER).setIngredient('s', Material.WEB).setIngredient('d',Material.IRON_INGOT));
+            Bukkit.getServer().addRecipe(new ShapedRecipe(get(Material.SADDLE)).shape("aaa","sas","dxd").setIngredient('a', Material.LEATHER).setIngredient('s', Material.STRING).setIngredient('d',Material.IRON_INGOT));
         }
         if (go("Misc.Tag")) {
-            Bukkit.getServer().addRecipe(new ShapedRecipe(get(Material.NAME_TAG)).shape("xxs","xax","axx").setIngredient('s', Material.WEB).setIngredient('a', Material.PAPER));
+            Bukkit.getServer().addRecipe(new ShapedRecipe(get(Material.NAME_TAG)).shape("xxs","xax","axx").setIngredient('s', Material.STRING).setIngredient('a', Material.PAPER));
         }
         if (go("Misc.Cobweb")) {
-            Bukkit.getServer().addRecipe(new ShapedRecipe(get(Material.WEB)).shape("sss","sxs","sss").setIngredient('s', Material.WEB).setIngredient('x', Material.SLIME_BALL));
+            Bukkit.getServer().addRecipe(new ShapedRecipe(get(Material.WEB)).shape("sss","sxs","sss").setIngredient('s', Material.STRING).setIngredient('x', Material.SLIME_BALL));
         }
         if (go("Misc.Elytra")) {
-            Bukkit.getServer().addRecipe(new ShapedRecipe(get(Material.ELYTRA)).shape("wow","lel","kek").setIngredient('w', Material.WEB).setIngredient('o', Material.EYE_OF_ENDER).setIngredient('l', Material.LEATHER).setIngredient('k', Material.INK_SACK, (short) 8));
+            Bukkit.getServer().addRecipe(new ShapedRecipe(get(Material.ELYTRA)).shape("wow","lel","kek").setIngredient('w', Material.STRING).setIngredient('o', Material.EYE_OF_ENDER).setIngredient('l', Material.LEATHER).setIngredient('k', Material.INK_SACK, (short) 8));
         }
         if (go("Misc.Spawner")) {
             Bukkit.getServer().addRecipe(new ShapedRecipe(get(Material.MOB_SPAWNER)).shape("sss","sxs","sss").setIngredient('s', Material.IRON_FENCE).setIngredient('x', Material.MONSTER_EGG));
@@ -54,8 +54,8 @@ public class Craftable extends JavaPlugin {
         if (go("HorseArmour.Iron")) {
             Bukkit.getServer().addRecipe(new ShapedRecipe(get(Material.IRON_BARDING)).shape("aai","ixi","iii").setIngredient('i', Material.IRON_INGOT).setIngredient('x', Material.WOOL, (short) 15));
         }
-        if (go("HorseArmour.GOLD")) {
-            Bukkit.getServer().addRecipe(new ShapedRecipe(get(Material.IRON_BARDING)).shape("aai","ixi","iii").setIngredient('i', Material.GOLD_INGOT).setIngredient('x', Material.WOOL, (short) 14));
+        if (go("HorseArmour.Gold")) {
+            Bukkit.getServer().addRecipe(new ShapedRecipe(get(Material.GOLD_BARDING)).shape("aai","ixi","iii").setIngredient('i', Material.GOLD_INGOT).setIngredient('x', Material.WOOL, (short) 14));
         }
         if (go("HorseArmour.Diamond")) {
             Bukkit.getServer().addRecipe(new ShapedRecipe(get(Material.DIAMOND_BARDING)).shape("aai","ixi","iii").setIngredient('i', Material.DIAMOND).setIngredient('x', Material.WOOL, (short) 11));
@@ -63,21 +63,7 @@ public class Craftable extends JavaPlugin {
     }
 
     public void registerDiscRecipes() {
-        /*
-GOLD_RECORD("music disc - 13"),
-GREEN_RECORD("music disc - cat"),
-RECORD_10("music disc - ward"),
-RECORD_11("music disc - 11"),
-RECORD_12("music disc - wait"),
-RECORD_3("music disc - blocks"),
-RECORD_4("music disc - chirp"),
-RECORD_5("music disc - far"),
-RECORD_6("music disc - mall"),
-RECORD_7("music disc - mellohi"),
-RECORD_8("mucis disc - stal"),
-RECORD_9("music disc - strad"),
-     */
-        if (go("Disc.13")) {
+        if (go("Discs.13")) {
             Bukkit.getServer().addRecipe(new ShapedRecipe(get(Material.GOLD_RECORD)).shape("aoa","oxo","aoa").setIngredient('o', Material.OBSIDIAN).setIngredient('x', Material.GOLD_INGOT));
         }
         if (go("Discs.11")) {
