@@ -39,6 +39,10 @@ public class Craftable extends JavaPlugin {
             Bukkit.getServer().addRecipe(new ShapedRecipe(get(Material.SKULL_ITEM, 5)).shape("pep","sxs","rrr").setIngredient('p', Material.ENDER_PEARL).setIngredient('e', Material.EYE_OF_ENDER)
             .setIngredient('s', Material.DRAGONS_BREATH).setIngredient('x', Material.DRAGON_EGG).setIngredient('r', Material.REDSTONE));
         }
+        if (go("Misc.DragonEgg")) {
+            Bukkit.getServer().addRecipe(new ShapedRecipe(get(Material.DRAGON_EGG)).shape("tit","tet","tot").setIngredient('t', Material.OBSIDIAN).setIngredient('e', Material.EGG)
+                    .setIngredient('i', Material.DIAMOND).setIngredient('o', Material.ENDER_STONE));
+        }
     }
 
     public void registerIceRecipes() {
